@@ -1,4 +1,4 @@
-##ProjectStub
+## ProjectStub
 
 ![basic architecture diagram][diagram]
 
