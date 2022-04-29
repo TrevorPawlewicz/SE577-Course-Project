@@ -9,7 +9,6 @@ The course project will involve building a web based, cloud native, front end to
 ---
 # Getting Started with this App Instructions
 
-
 ##### `cd SE577-Course-Project`
 
 ##### `npm install`
