@@ -4,8 +4,7 @@
 
 The course project will involve building a web based, cloud native, front end to GitHub. The project will be developed incrementally over the entire course consisting of several deliverables along the way.
 
----
-![Drexel logo](images/Drexel-engineering-blue-black.png "Drexel Engineering")
+_***Due:*** Sunday, April 17, 2022_
 ---
 # Getting Started with this App Instructions
 
