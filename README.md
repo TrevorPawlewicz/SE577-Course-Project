@@ -7,8 +7,8 @@ In this branch create a file called ProjectStub.md that contains a basic archite
 
 _***Due:*** Sunday, April 17, 2022_
 ---
-# Getting Started with this App Instructions
 
+# Getting Started with this App Instructions
 
 ##### `cd SE577-Course-Project`
 
