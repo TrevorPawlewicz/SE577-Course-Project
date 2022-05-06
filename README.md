@@ -11,25 +11,6 @@ Create an architectural model of the current state of your system – UML or C4 
 Create a file called `Release3.md` and provide a section on how to run your application with the docker component, a section showing the architectural model created above.  Also provide a short narratives about the state of the current systems architecture.
 
 ---
-# Getting Started with this App Instructions
-
-
-##### `cd SE577-Course-Project`
-
-##### `npm install`
-
-This command installs a package, and any packages that it depends on.
-
-##### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
----
-
 ##### Installing and setting up the development environment (and relevant tools)
 
 | Tools      | Version used | Location  |
@@ -38,3 +19,4 @@ You may also see any lint errors in the console.
 | Node.js    | 15.13.0      | https://nodejs.org |
 | npm        | 7.7.6        | https://www.npmjs.com/ |
 | Yarn       | 1.22.10      | https://yarnpkg.com/en/docs/install |
+| Docker     | 20.10.14     | https://www.docker.com/ |
