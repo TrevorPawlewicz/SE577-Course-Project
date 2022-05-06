@@ -1,4 +1,3 @@
-// import { seedData } from "../data";
 import styled from "styled-components";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import "@splidejs/splide/dist/css/splide.min.css";
@@ -10,10 +9,9 @@ function Core(){
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
 
-  // Note: the empty deps array [] means
-  // this useEffect will run once
+  // Note: this will fetch Docker microservice
   useEffect(() => {
-    fetch("../mydata.json")
+    fetch("/api")
       .then(res => res.json())
       .then(
         (result) => {
