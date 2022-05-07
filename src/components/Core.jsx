@@ -15,7 +15,6 @@ function Core(){
       .then(res => res.json())
       .then(
         (result) => {
-          console.log('result ==> ', result);
           setIsLoaded(true);
           setItems(result);
         },
