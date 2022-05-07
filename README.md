@@ -8,7 +8,7 @@ Take the code from `proj-release-2` and create a new branch `proj-Release-3`.  T
 
 Create an architectural model of the current state of your system – UML or C4 is fine.
 
-Create a file called `Release3.md` and provide a section on how to run your application with the docker component, a section showing the architectural model created above.  Also provide a short narratives about the state of the current systems architecture.
+##### See `Release3.md` on how to run your application with the docker component, a section showing the architectural model created above.  Also provide a short narratives about the state of the current systems architecture.
 
 ---
 ##### Installing and setting up the development environment (and relevant tools)
