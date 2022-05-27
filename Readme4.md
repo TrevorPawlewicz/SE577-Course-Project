@@ -34,6 +34,9 @@ Have `Docker` running on local machine
 ###### trev's Docker Hub repo:
 `https://hub.docker.com/r/trevdevhq/se577-course-server`
 
+CLI:
+`docker pull trevdevhq/se577-course-server`
+
 #### CLI #1 Course prject tab:
 ##### `npm start`
 
