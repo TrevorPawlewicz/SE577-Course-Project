@@ -26,6 +26,8 @@ Create a `.env` file in the root folder and set these variables:
 
 ### Open 2nd cli tab within folder for Docker server
 
+Have `Docker` running on local machine
+
 #### CLI #2 Docker server tab:
 `docker run --name webserver1 -d -p 5002:5002 trevdevhq/se577-course-server:1.0.1`
 

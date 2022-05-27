@@ -28,9 +28,11 @@ You may also see any lint errors in the console.
 
 ##### Installing and setting up the development environment (and relevant tools)
 
-| Tools      | Version used | Location  |
-| -----------|:------------:| :--------:|
-| Git        | 2.21.0       | https://git-scm.com |
-| Node.js    | 15.13.0      | https://nodejs.org |
-| npm        | 7.7.6        | https://www.npmjs.com/ |
-| Yarn       | 1.22.10      | https://yarnpkg.com/en/docs/install |
+| Tools              | Version used | Location  |
+| -------------------|:------------:| :--------:|
+| Git                | 2.21.0       | https://git-scm.com |
+| Node.js            | 15.13.0      | https://nodejs.org |
+| npm                | 7.7.6        | https://www.npmjs.com/ |
+| Yarn               | 1.22.10      | https://yarnpkg.com/en/docs/install |
+| Docker             | 20.10.14     | https://www.docker.com/ |
+| Docker Desktop     | 4.7.1        | https://www.docker.com/ |
