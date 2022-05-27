@@ -1,6 +1,6 @@
 # SE577-Course-Project
 
-## Week 9 Deliverable: `proj-Release-4`
+## Week 8 Deliverable: `proj-Release-4`
 
 # Getting Started with this App Instructions
 
