@@ -1,44 +1,59 @@
-import { seedData } from "../data";
 import styled from "styled-components";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import "@splidejs/splide/dist/css/splide.min.css";
-// import { useEffect, useState } from "react";
-
+import { useEffect, useState } from "react";
+//--------------------IMPORTS------------------------------
 
 function Core(){
-  // const [core, setCore] = useState([]);
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [items, setItems] = useState([]);
 
-  // useEffect(() => {
-  //   getCoreData();
-  // }, []);
-  //
-  // const getCoreData = async () => {
-  //   const api = await fetch("../data");
-  //   const data = await api.json();
-  //   console.log(data);
-  //   setCore(data.department);
-  // };
+  useEffect(() => {
+    // fetch("../mydata.json")
+    fetch("/api")
+      .then(res => res.json())
+      .then(
+        (result) => {
+          console.log('result ==> ', result);
+          setIsLoaded(true);
+          setItems(result);
+        },
+        (error) => {
+          setIsLoaded(true);
+          setError(error);
+        }
+      )
+  }, [])
 
-  return (
-    <div>
-      <Wrapper >
-        <h3>Core Stuff</h3>
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  } else if (!isLoaded) {
+    return <div>Loading...</div>;
+  } else {
+    return (
+      <div>
+        <Wrapper >
+          <h1>Project Timeline Calc</h1>
 
-        <Splide options={{ perPage:3, arrows: false, drag: 'free', gap: '5rem'}}>
-          {seedData.map((data) => {
-            return (
-              <SplideSlide>
-                <Card>
-                  <p>{data.department}</p>
-                  <img src={data.image} alt={data.department}/>
-                </Card>
-              </SplideSlide>
-            );
-          })}
-        </Splide>
-      </Wrapper>
-    </div>
-  );
+          <Splide options={{ perPage:3, arrows: false, drag: 'free', gap: '5rem'}}>
+            {items.seedData.map((data) => {
+              return (
+                <SplideSlide key={data.id}>
+
+                    <Card>
+                      <p>{data.department}</p>
+                      <img src={data.image} alt={data.department}/>
+                    </Card>
+
+                </SplideSlide>
+              );
+            })}
+          </Splide>
+        </Wrapper>
+      </div>
+    );
+  }
 }
 
 
