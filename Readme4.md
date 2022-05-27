@@ -41,23 +41,12 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ---
-## architectural model
+## GitHub OAuth login:
+- Login component that has a button that triggers the login request to Github API: a request to the Github API to authorize the app.
+- AuthContext to make the global state and actions in the store.
+- a simple store that’ll keep hold of the application state.
+- a proxy server express app to enable “Access-Control-Allow-Origin”
 
-- *__The Docker daemon__* listens for Docker API requests and manages Docker objects such as images.
-
-- *__The Docker client__* is the primary way that many Docker users interact with Docker.
-
-- *__A Docker registry__* stores Docker images.
-
-- When you use the `docker pull` or `docker run` commands, the required images are pulled from the configured registry.
-
-- An *__image__* is a read-only template with instructions for creating a Docker container.
-
-- A *__container__* is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI.
-
-- docker is used to host the API data for use in the UI:
-
-![architecture model](images/architectural-model.png "My Architectural Model")
 ---
 # Need to include experience with OAuth here...
 ### TBD
