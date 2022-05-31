@@ -51,5 +51,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 - a proxy server express app to enable “Access-Control-Allow-Origin”
 
 ---
-# Need to include experience with OAuth here...
-### TBD
+# My thoughts and experiences with using oAuth and tokens to integrate with github...
+My overall concern is the security around the process of having personal talokens with a public repo.
+Token storage, revoking tokens and expired tokens can also be tedious to constantly give attentention to being up to date.
+My thoughts are that a better solution will be thought of soon.
