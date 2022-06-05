@@ -2,7 +2,11 @@
 
 ## Main
 
-The course project will involve building a web based, cloud native, front end to GitHub. The project will be developed incrementally over the entire course consisting of several deliverables along the way.
+Final Project Deliverable: Weeks 9 and 10 will be focused on finishing your project. Think about a few features that you want to play with in your application via the github API. It can be exploring repos, or commits within a repo, user information, etc.  Create the  proj-final branch.  Write some code to clean up your application and to implement the features that you thought about.  
+
+Add a FinalRelease.md file.  This file should have everything described that is required to build and run your final project, including scripts if necessary.  The file should also contain an architecture description of your project – this includes models, architecture decisions, description of quality attributes, etc
+
+Submit the final project to blackboard with a link to the release branch.
 
 ---
 ![Drexel logo](images/Drexel-engineering-blue-black.png "Drexel Engineering")

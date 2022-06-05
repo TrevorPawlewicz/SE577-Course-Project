@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import "@splidejs/splide/dist/css/splide.min.css";
 import { useEffect, useState } from "react";
@@ -42,8 +43,10 @@ function Core(){
                 <SplideSlide key={data.id}>
 
                     <Card>
-                      <p>{data.department}</p>
-                      <img src={data.image} alt={data.department}/>
+                      <Link to={data.id}>
+                        <p>{data.department}</p>
+                        <img src={data.image} alt={data.department}/>
+                      </Link>
                     </Card>
 
                 </SplideSlide>
