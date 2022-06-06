@@ -44,14 +44,36 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ---
-## GitHub OAuth login:
-- Login component that has a button that triggers the login request to Github API: a request to the Github API to authorize the app.
-- AuthContext to make the global state and actions in the store.
-- a simple store that’ll keep hold of the application state.
-- a proxy server express app to enable “Access-Control-Allow-Origin”
+## Architecture Description descisions:
 
----
-# My thoughts and experiences with using oAuth and tokens to integrate with github...
-My overall concern is the security around the process of having personal talokens with a public repo.
-Token storage, revoking tokens and expired tokens can also be tedious to constantly give attentention to being up to date.
-My thoughts are that a better solution will be thought of soon.
+- **Single Page application (React.js)**
+  * React is a free and open-source front-end JavaScript library for building user interfaces based on UI components.
+    * React components implement a `render()` method that takes input data and returns what to display.
+    * Breaks The UI Into A Component Hierarchy.
+    * `state` is managed within the component (similar to variables declared within a function).
+    * `React Router` is a fully-featured client and server-side routing library for React, a JavaScript library for building user interfaces.
+
+- **GitHub OAuth (Login)**
+  * GitHub's OAuth implementation supports the standard authorization code grant type and the OAuth 2.0 Device Authorization Grant for apps that don't have access to a web browser.
+
+- **GitHub Search API**
+  * The Search API lets you to search for specific items on GitHub. In this case, `userName` search to obtain user info.
+
+- **Ant Design CSS components**
+  * a React UI library `antd` that contains a set of high quality components and demos for building rich, interactive user interfaces...
+    * Enterprise-class UI designed for web applications.
+    * A set of high-quality React components out of the box.
+    * Written in TypeScript with predictable static types.
+    * Whole package of design resources and development tools.
+    * Internationalization support for dozens of languages.
+    * Powerful theme customization in every detail.
+
+- **Splide Library**
+  * Splide is a lightweight, flexible and accessible `slider/carousel` written in TypeScript with no dependencies.
+
+- **styled-components library**
+  * `styled-components` lets you write actual CSS in your JavaScript. Use all the features of CSS: media queries, all pseudo-selectors, nesting, etc.
+
+- **Docker**
+  * Deploy applications in separate containers independently and in different languages. Reduce the risk of conflict between languages, libraries or frameworks.
+  * Integrate with your favorite tools throughout your development pipeline
